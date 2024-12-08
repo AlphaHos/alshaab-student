@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Ouhod;
+    src: local("ae_Ouhod-Bold"), url(C:\Users\اللمسة السحرية\Desktop\webprojectFolder\ae_Ouhod-Bold.ttf) format("something")
+
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color:#222831 ;
+}
+
+.navbar {
+    background-color: #222831; /* رمادي شفاف */
+}
+
+.navbar-brand{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 700;
+   color: #ccc;
+}
+
+.nav-link {
+    color: white !important; /* لون النصوص في شريط التنقل أبيض */
+}
+
+.nav-link:hover {
+    color: #ccc !important; /* لون النص عند التمرير */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Ouhod";
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Ouhod, Helvetica, sans-serif;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.11); /* خلفية داكنة للنص */
+    padding: 10px;
+}
+
+.member-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;   
+}
+.text-center {
+    text-align: center; /* توسيط النصوص */
+    font-size: 15px;
+    font-weight: 400;
+}
+.row{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-md-4{
+    background: #f5f5b09c;
+    border-radius: 0px;
+    margin-bottom: 0%;
+    padding: 40px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.col1 img{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-left: 5%;
+    align-items: center;
+
+}   
+
+.col2 img{
+    width: 82%;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.col3 img{
+    width: 82%;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+   
+    margin-right: 3%;
+}
+
+
+.facilities{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+   
+
+}
+.dalel{
+    background-color: #3C3D37;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.dalelfont{
+    color: #ffffff;
+    font-weight: bolder;
+}
+.box {
+    background-color: #007bff; /* لون خلفية المربع */
+    color: white; /* لون النص */
+    padding: 10px; /* مسافة داخلية */
+    border-radius: 10px; /* زوايا دائرية */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+    text-decoration: none; /* إزالة الخط تحت الرابط */
+    font-size: 24px; /* حجم الخط */
+    transition: background-color 0.3s; /* تأثير الانتقال */
+}
+
+.box:hover {
+    background-color: #0056b3; /* تغيير لون الخلفية عند التمرير */
+}
+/*----- testimonials -----*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonial-col{
+    flex-basis: 40%;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 30px;
+    cursor: pointer;
+    display: flex;   
+}
+
+.testimonial-col img{
+    height: 70px;
+    width: 70px;
+    margin-left: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    padding: 0;    
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;    
+}
+
+.testimonial-col .fa{
+    color:#f44336;    
+}
+
+@media(max-width: 700px){
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+footer {
+        font-family: "Ohoud";
+        display: flex; /* استخدام Flexbox لتوزيع العناصر */
+        justify-content: space-between; /* توزيع المساحة بين العناصر */
+        align-items: flex-start; /* محاذاة العناصر إلى الأعلى */
+        background-color: #222831; /* لون خلفية التذييل */
+        padding: 20px; /* مسافة داخلية */
+        padding-bottom: 0%;
+        padding-top: 25px;
+}
+
+.social-icons {
+        text-align: left; /* محاذاة النص إلى اليسار */
+        flex: 1; /* السماح لقسم مواقع التواصل الاجتماعي باستخدام المساحة المتاحة */
+}
+
+.social-icon {
+        text-decoration: none; /* إزالة الخط تحت الرابط */
+        color: #FFF8F3; /* لون النص */
+        margin: 0 5px; /* مسافة بين الروابط */
+        font-size: 18px; /* حجم الأيقونة */
+        transition: color 0.3s; /* تأثير الانتقال */
+}
+
+    .social-icon:hover {
+        color: #ccc; /* تغيير لون الأيقونة عند التمرير */
+    }
+
+    .map {
+        text-align: right; /* محاذاة النص إلى اليمين */
+        flex: 1; /* السماح لقسم الخريطة باستخدام المساحة المتاحة */
+    }
+
+    iframe {
+        border: 1px; /* حدود الإطار */
+        width: 100%; /* جعل عرض الخريطة 100% */
+        height: 200px; /* ارتفاع الخريطة */
+    }
+
+.footer2 {
+    background-color: #000000;
+    height: min-content;
+}
+footer p {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 0px;
+} 
